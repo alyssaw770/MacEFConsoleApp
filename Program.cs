@@ -11,7 +11,7 @@ namespace MacEFConsoleApp
             using (var db = new ActorDbContext())
             {
                 //Seed
-                db.Actors.AddRange(new Actor { Name = "Brue Lee", Age = 77, AcademyWinner = false },
+                db.Actors.AddRange(new Actor { Name = "Bruce Lee", Age = 77, AcademyWinner = false },
                 new Actor { Name = "Alec Baldwin", Age = 55, AcademyWinner = false });
 
                 var count = db.SaveChanges();
