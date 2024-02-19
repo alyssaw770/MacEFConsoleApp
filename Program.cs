@@ -17,13 +17,13 @@ namespace MacEFConsoleApp
                 var count = db.SaveChanges();
 
                 //Fetch and Write out data
-                Console.WriteLine("{0} additional record saved to database", count);
+                Console.WriteLine("{0} additional records saved to database", count);
 
                 Console.WriteLine();
                 Console.WriteLine("All Actors now in database:");
                 foreach (var Actor in db.Actors)
                 {
-                    System.Console.WriteLine($"Name - {Actor.Name},\t\t" + $"Age: {Actor.Age},\t\t" +
+                    Console.WriteLine($"Name - {Actor.Name},\t\t" + $"Age: {Actor.Age},\t\t" +
                     $"Academy Winner: {Actor.AcademyWinner}");
 
                 }
